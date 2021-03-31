@@ -1,7 +1,7 @@
 <template>
   <div class="input">
       <label>{{label}}:</label>
-      <input :type="type" :value="value" @change="$emit(e)"/>
+      <input :type="type" :value="value" @change="$emit(e)" :name="name"/>
       <p class="error">{{error}}</p>
   </div>
 </template>
@@ -15,6 +15,7 @@ import { Options, Vue } from 'vue-class-component';
     label: String,
     error: String,
     value: String,
+    name: String,
   },
 })
 export default class Input extends Vue {}

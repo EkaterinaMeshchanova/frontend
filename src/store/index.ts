@@ -1,8 +1,12 @@
 import { createStore } from 'vuex';
-import loginState from './login';
+import authState from './auth';
+import userState from './user';
+import bookState from './books';
 
 export default createStore({
   modules: {
-    loginState,
+    authState,
+    userState,
+    bookState,
   },
 });
